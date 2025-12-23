@@ -11,7 +11,7 @@ public class Myblog11Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Myblog11Application.class, args);
 	}
-	@Bean
+	@Bean //It tells Spring to create and manage an object (bean)returned by a method in the Spring container.
 	public ModelMapper modelMapper(){
 		return new ModelMapper();
 	}
