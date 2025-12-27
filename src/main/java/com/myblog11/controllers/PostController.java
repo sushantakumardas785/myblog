@@ -29,7 +29,7 @@ public class PostController {
     private PostService postService;
     @Autowired
     private FileService fileService;
-    @Value("${project.image}")
+    @Value("${project.image}") // Reads the value of 'project.image' from application.properties or application.yml
     private String path;
 
     //create
